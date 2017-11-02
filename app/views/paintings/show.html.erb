@@ -30,7 +30,8 @@
 <% for comment in @painting.comments %>
 <p>
   <strong><%= "#{comment_number += 1}:" %></strong>
-  <%= comment.content %>
+  <%= comment.content %> |
+  <%= link_to "Delete Comment", painting_comment_path(@painting, comment), method: :delete %>
 </p>
 <% end %>
 
