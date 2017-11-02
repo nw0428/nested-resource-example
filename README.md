@@ -1,24 +1,5 @@
-# README
+# Nested resources
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This project has an example of a nested resource.
+Specifically we are adding the ability to add comments to Paintings
+It closely tracks the [code here](http://guides.rubyonrails.org/getting_started.html#adding-a-second-model)
