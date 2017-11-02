@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: 'paintings#index'
   resources :paintings do
     resources :comments
   end

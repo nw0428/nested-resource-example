@@ -25,5 +25,18 @@
   <%= @painting.year %>
 </p>
 
+<h2>Add a comment:</h2>
+<%# This syntax model: [] is for dealing with namespaced or nested routes which is what we have %>
+<%# Documentation: http://guides.rubyonrails.org/form_helpers.html#dealing-with-namespaces %>
+<%= form_with(model: [ @painting, @painting.comments.build ], local: true) do |form| %>
+  <p>
+    <%= form.label :content %><br>
+    <%= form.text_area :content %>
+  </p>
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
+
 <%= link_to 'Edit', edit_painting_path(@painting) %> |
 <%= link_to 'Back', paintings_path %>
